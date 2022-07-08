@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Weather Dashboard</title>
+</head>
+<body class="flex-column min-100-vh">
+  <div class="bg-stone-600">
+  <div class>
+    <h1 class="app-title"> Weather Dashboard</h1>
+          <h3 class="card-header text-uppercase">Search By City</h3>
+          <form id="city-form" class="card-body">
+            <label class="form-label" for="cityname">City Name</label>
+            <input name="cityname" id="cityname" type="text" autofocus="true" class="form-input" />
+            <button type="submit" class="btn">Get Weather</button>
+          </form>
+        </div>
+      </div>
+        <div class="card hidden" id="current-weather-card">
+          <h2 class="card-header" id="weather-status"></h2>
+          <div class="card-body" id="current-weather">
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="card" id="history" style="display: none;">
+          <h3 class="card-header text-uppercase">Search History <i id="look" class='search-city'
+              title='Clear History'></i>
+          </h3>
+          <div class="card-body" id="history-buttons">
+          </div>
+        </div>
+      </div>
+        <div class="card hidden" id="five-day-card">
+          <h2 class="card-header" id="five-day-head">5-Day Forecast</h2>
+          <div class="card-body flex-row justify-space-around" id="five-day-body">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
